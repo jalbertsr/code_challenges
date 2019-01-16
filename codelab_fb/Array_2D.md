@@ -1,5 +1,6 @@
 ## Array 2D
 #### Javascript
+#### 5 min
 
 ```javascript
 function performOps(A){
@@ -9,7 +10,7 @@ function performOps(A){
     for(i = 0; i < m;i++){
         B.push(new Array(n));
         for(j=0;j< n;j++){
-            B[i][n-1-j] = A[i][j] // with (n-1-j) we basically invert the position of the elements inside of each array
+            B[i][n-1-j] = A[i][j]
         }
     }
     return B
@@ -29,4 +30,5 @@ for (i = 0; i < B.length; i++) {
 
 ```
 
-Solution: `[[4, 3, 2, 1], [8, 7, 6, 5], [12, 11, 10, 9]` 
+Solution: `[[4, 3, 2, 1], [8, 7, 6, 5], [12, 11, 10, 9]`  
+With `(n-1-j)` we basically invert the position of the elements inside of each array
